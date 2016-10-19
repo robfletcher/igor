@@ -47,7 +47,7 @@ import java.util.concurrent.TimeUnit
 @ConditionalOnProperty("jenkins.enabled")
 class JenkinsConfig {
 
-    @Value('${client.timeout:30000}')
+    @Value('${client.timeout:50000}')
     int clientTimeout
 
     @Autowired(required = false)
